@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Pradeep Bhattarai - Home</title>
+	<!-- Meta tags -->
+	<meta name="description" content="This is the homepage of my website.">
+	<meta name="keywords" content="Pradeep bhattarai, pradeep bhattarai">
+	<meta name="author" content="Pradeep Bhattarai">
+	<!-- Meta tags close -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Google Fonts as External CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:500&display=swap" rel="stylesheet">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<script type="text/javascript">
+
+
+		function date() { // Function for displaying date in webpages
+	var year = new Date().getFullYear();
+	dateField = $('.date');
+	dateField[0].innerText = year + "   ";
+}
+	</script>
+	<style>
+
+* { /*All elements*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header { /*Sementic header element*/
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    transition: all 2s ease-in;
+    /*width: 100vw;*/
+}
+
+.main_text {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    padding-left: 10vw;
+    padding-top: 2vh;
+}
+
+header h1 { /*heading 1 inside header*/
+    font-weight: 300;
+    font-size: 60px;
+    color: #ffe8a7;
+    margin-top: 2vh;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.navbar {  /*Sticky navbar*/
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background-color: #25231f;
+    box-shadow: #4c353580 0px 5px 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.navContent {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+ul {
+    font-size: 14px;
+    line-height: 150%;
+    list-style: none;
+    padding: 0px;
+}
+
+.listContent {
+    margin-left: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.listContent a {
+    color: rgb(109, 131, 242);
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.navContent h2 {
+    color: #65dc33;
+}
+
+.current {
+    /*color: #ece622;*/
+    border-bottom: 2.5px #00d8ff solid;
+    padding-bottom: 4px;
+}
+
+.myImage {
+    border-radius: 50%;
+    width: 260px;
+    border: 5px white solid;
+    margin-top: 15vh;
+}
+
+a:hover { /*For hover effect*/
+    color: #00f3ff;
+}
+
+h1 { /*css for heading 1*/
+    font-weight: 300;
+    font-size: 30px;
+    color: #ffe8a7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    background-color: rgb(35, 35, 35);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    padding: 30px 35px;
+    border-radius: 10px;
+    width: 43vw;
+    color: white;
+    margin-right: 40px;
+    margin-top: 30px;
+    padding-bottom: 15px;
+}
+
+
+strong {
+    font-size: 15px;
+    color: #00ffffbd;
+}
+
+footer {
+    background-color: #000000;
+    height: 4vh;
+    padding-top: 2vh;
+    padding-left: 10vw;
+    color: white;
+}
+		/*Internal CSS*/
+	#secondSection {
+		/*background: url(images/bg.jpg);*/
+		height: 45vh;
+		background: #171d1b;
+		padding-top: 5vh;
+		padding-bottom: 66px;
+		overflow: hidden;
+	}
+
+	pre {
+		font-size: 15px;
+		font-family: Montserrat, sans-serif;
+		color: rgb(248, 248, 248);
+		line-height: 25px;
+	}
+
+	.row {
+		display: flex;
+	}
+	.leftColumn {
+		flex: 50%;
+		padding: 2vw 3vw;
+	}
+	.rightColumn {
+		flex: 50%;
+	}
+
+	.leftColumn > p {
+		padding: 20px 0px 20px 0px;
+		font-size: 20px;
+		color: white;
+		text-align: justify;
+	}
+
+	.details > p {
+		color: #00e7ff;
+		line-height: 25px;
+	}
+
+	.details > p > span {
+		color: #00b986;
+	    font-size: large;
+	}
+
+	.social img {
+		width: 30px;
+	    height: 30px;
+	    padding-right: 15px;
+	    padding-top: 10px;
+}
+
+	.social ul {
+		display: flex;
+	}
+
+	#repo_list > li > a {
+		    text-decoration: none;
+    color: white;
+    line-height: 2em;
+    font-size: 1.3em;
+	}
+	#repo_list > li > a:hover {
+		color:#65dc33;
+	}
+
+	#repo_list > li {
+		display: inline;
+		    margin-left: 20px;
+	}
+	</style>
+</head>
+
+<body>
+	<div class="navbar"> 
+		<div class="navContent">
+			<h2 style="cursor: pointer;" onclick="javascript:location='index.html'">Pradeep <span style="color: #00d8ff;;">Bhattarai</span></h2>
+			<nav><!--  Sementic Element for nav bar -->
+				<ul class="rightContent"> <!-- Unordered List -->
+					<li class="listContent"><a class="current" href="index.html">Home</a></li>
+					<li class="listContent"><a href="about.html">CV</a></li>
+					<li class="listContent"><a href="blog.html">Blog</a></li>
+					<li class="listContent"><a href="research.html">Research</a></li>
+					<li class="listContent"><a href="contact.html">Contact</a></li>
+				</ul> 
+			</nav>
+		</div>
+	</div>
+	
+	<header style="background-image: url('images/header-background.jpg');"> <!--  Sementic Element for Header -->
+		<div class="main_text">
+			<!-- <img src="bg-1.jpg" alt="BackGround" class="mainbg"> -->
+			<img src="https://avatars3.githubusercontent.com/u/29733866?v=4" alt="" class="myImage">
+			<h1>Hi, I'm Pradeep Bhattarai.</h1>
+			<h3 style="color: aquamarine;     padding-top: 10px;">Student, who is hunger to learn new things.</h3>
+		</div>
+	</header>
+	<section id="secondSection">
+		<h1 style="text-align: center; ">About Me</h1>
+		<div class="row">
+			<div class="leftColumn">
+				<p>I am <strong>Pradeep Bhattarai</strong>, currently student at <strong>Islington College</strong>, Kamalpokhari pursuing my <strong>Undergraduate</strong> Degree in BSc. (Hons) Computer Networking and IT Security.</p>
+				<p style="color: #77ff55;font-size: 20px;font-weight: 900;">Contact:</p>
+				<div class="details">
+					<p>Name: <span>Pradeep Bhattarai</span></p>
+					<p>Address: <span>44600 Kathmandu, Nepal</span></p>
+					<p>Email: <span>contact@pradeepbhattarai.me</span></p>
+					<p style="font-size: 20px;padding: 10px 0 10px 0;color: #77ff55;font-weight: 900;">Follow me on:</p>
+					<div class="social">
+						<ul>
+							<li><a href="https://www.facebook.com/bhprdp"><img src="images/facebook.png" alt="Facebook"></a></li>
+							<li><a href="https://twitter.com/bhprdp01"><img src="images/twitter.png" alt="Twitter"></a></li>
+							<li><a href="https://github.com/pr0d33p"><img src="images/github.png" alt="Github"></a></li>
+							<li><a href="https://www.linkedin.com/in/prdp/"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
+							<li><a href="https://www.instagram.com/__theprdp/"><img src="images/instagram.png" alt="Instagram"></a></li>
+							<li><a href="https://www.youtube.com/channel/UC9Kc_AK1-Wq1wuEm7_9mAMg?view_as=subscriber"><img src="images/youtube.png" alt="Youtube"></a></li>
+						</ul>					
+					</div>
+				</div>
+
+			</div>
+			<div class="rightColumn">
+		<div class="card">
+<pre>
+1. import java.util.*;
+2. public class <strong>Person</strong> {
+3.     public String name, gender;
+4.     private String contact[];
+5.     private int age;
+6.     public Person() { 		<span style="color: gray;">// Constructor</span>
+7.         this.name = "<strong>Pradeep Bhattarai</strong>";
+8.         this.gender = "<strong>Male</strong>";
+9.         this.contact = new String[]{"<strong><a href="mailto:bhprdp01@outlook.com" style="color: #00ffffbd; text-decoration: none">contact@pradeepbhattarai.me</a></strong>", "<strong>9800000000</strong>"};
+10.        this.age = <span class="age" onmouseover="changeElement()">Calendar.getInstance().get(Calendar.YEAR)- 20xx;</span>
+11.     }
+12. }
+</pre>
+			</div>
+		</div>
+		</div>
+
+	</section>
+	<section id="secondSection">
+		<h1 style="text-align: center; margin: 20px">My Projects</h1>
+		
+<nav id="repos">
+    <div id="repo_list">
+    </div>
+</nav>
+<div id="repo_content"></div>
+
+	</section>
+
+	<footer><!--  Sementic Element for footer -->
+		&copy; <strong><span class="date" ></span> <a href="index.html" style="color: #8eca92; text-decoration: none">Pradeep Bhattarai</a></strong>. All Rights Reserved.
+	</footer>
+	<script src="js/scripts.js"></script>
+	<script type="text/javascript">
+		// iinternal js
+		function changeElement(){
+			a = document.getElementsByClassName('age');
+			a[0].innerHTML ="<strong>" + "xx" + "</strong>;";
+			// alert("You got Easter Egg #1.");
+		}
+
+		$(document).ready(function() {
+    $.ajax({
+        type: "GET",
+        url: "https://api.github.com/users/pr0d33p/repos?per_page=10",
+        dataType: "json",
+        success: function(result) {
+            for( i in result ) {
+                $("#repo_list").append(
+                    "<li><a href='" + result[i].html_url + "' target='_blank'><img src='https://avatars3.githubusercontent.com/u/29733866?v=4' style='height:20px;margin-right:20px'>" +
+                    result[i].name + "</a></li>"
+                );
+            }
+        }
+    });
+});
+	</script>
+
+
+</body>
+
+</html>
